@@ -148,7 +148,7 @@ app.post("/pay", async (req, res) => {
 
             res
               .writeHead(301, {
-                Location: `http://localhost:3000/${req.originalUrl}`,
+                Location: `https://123westsocial.com/${req.originalUrl}`,
               })
               .end();
 
@@ -208,7 +208,7 @@ app.post("/pay", async (req, res) => {
 app.get("/cancel", async (req, res) => {
   res
     .writeHead(301, {
-      Location: `http://localhost:3000/${req.originalUrl}`,
+      Location: `https://123westsocial.com/${req.originalUrl}`,
     })
     .end();
   return res.json({ status: 0, data: "Failed" });
